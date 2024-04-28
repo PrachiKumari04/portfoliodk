@@ -1,0 +1,219 @@
+/* appling google font over the website  */
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+/* styling menu icon */
+.nav-menu{
+    border: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+/* styling navbar links  */
+.navbar-nav a{
+    color: black;
+    position: relative;
+}
+.navbar-nav a:hover{
+    color: #fca61f;
+}
+.navbar-nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 35px;
+    position: absolute;
+    background: #fca61f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.navbar-nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  /* styling contact btn  */
+.c-btn{
+    border: none;
+    background: #fca61f;
+    color: #fff;
+    font-size: 1.2rem;
+}
+/* styling home section starts */
+.home{
+    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
+    padding: 30px 0px 10px 0px;
+}
+.home h2{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.c-orange{
+    color: #6f34fe;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.home p{
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.h-btn:hover{
+    background: #6f34fe;
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+.link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fca61f;
+    position: relative;
+}
+.link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    background-color: #6f34fe;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.link:hover{
+    color: #6f34fe;
+}
+.link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.home__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-image {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .home__img {
+    margin-left: 50px; /* Adjust the margin as needed */
+  }
+}
+
+
+
+/* expertise section starts */
+.heading small{
+    color: #6f34fe;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.heading h3{
+    margin-top: 0.5rem;
+    color: #3f396d;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.expertise h4{
+    color: #3f396d;
+    font-weight: 700;
+}
+.expertise a{
+    text-decoration: none;
+    color: #fca61f;
+}
+.expertise a:hover{
+    color: #6f34fe;
+}
+.expertise .service-card{
+    text-align: center;
+    padding: 15px 15px;
+    border-radius: 0.7rem;
+}
+
+/* services section starts */
+.services {
+    margin: 50px auto; /* Center the section horizontally */
+    padding: 0 20px; /* Add padding to create space away from the borders */
+}
+
+.heading {
+    margin-bottom: 30px; /* Adjust spacing as needed */
+    text-align: center;
+}
+
+.services .row {
+    justify-content: center; /* Center the service cards within the section */
+}
+
+.service-card {
+    text-align: center;
+    padding: 20px; /* Add padding to each service card */
+    margin-bottom: 30px; /* Adjust spacing between service cards */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Add a hover effect to lift the service card */
+    transition: transform 0.3s ease;
+}
+
+/* education section starts */
+.education {
+  margin: 50px auto; /* Center the section horizontally */
+  padding: 0 20px; /* Add padding to create space away from the borders */
+}
+
+.education .heading {
+  margin-bottom: 30px; /* Adjust spacing as needed */
+  text-align: center;
+}
+
+.education .row {
+  justify-content: center; /* Center the education cards within the section */
+}
+
+.education-card {
+  text-align: center;
+  padding: 20px; /* Add padding to each education card */
+  margin-bottom: 30px; /* Adjust spacing between education cards */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.education-card:hover {
+  transform: translateY(-5px); /* Add a hover effect to lift the education card */
+  transition: transform 0.3s ease;
+}
+
+.education-card h4 {
+  color: #6f34fe; /* Adjust color for the title */
+}
+
+.education-card p {
+  color: #3f396d; /* Adjust color for the text */
+}
+/* education section ends here */
+
+
+/* footer section starts */
+footer {
+    background-color: #211e39;
+}
+
+
+
+
+
